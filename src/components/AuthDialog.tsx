@@ -28,9 +28,7 @@ const AuthDialog = ({ isOpen, onClose, type }: AuthDialogProps) => {
 
 		try {
 			const endpoint =
-				type === "login"
-					? "http://115.28.136.113:8081/site/login"
-					: "http://115.28.136.113:8081/site/register";
+				type === "login" ? "/api/site/login" : "/api/site/register";
 
 			const response = await fetch(endpoint, {
 				method: "POST",

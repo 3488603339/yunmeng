@@ -1,0 +1,7 @@
+
+# 代理配置，将API请求代理到HTTP后端
+[[redirects]]
+  from = "/api/*"
+  to = "http://115.28.136.113:8081/:splat"
+  status = 200
+  force = true
